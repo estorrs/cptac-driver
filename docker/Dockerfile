@@ -28,13 +28,13 @@ WORKDIR /cptac_driver
 ## 
 ## RUN pollock-setup from_seurat
 #RUN conda install -y -c epstorrs pollock==0.0.10
-<<<<<<< HEAD
-RUN pip install matplotlib seaborn jupyter jupyter_contrib_nbextensions pandas sklearn
-RUN pip install git+https://github.com/estorrs/mgitools
-RUN conda install -c dglteam dgl-cuda10.1
-=======
-RUN pip install matplotlib seaborn jupyter jupyter_contrib_nbextensions pandas
->>>>>>> b0e6e31222badd59e97fab6fa97ec38d2dc5e586
+## <<<<<<< HEAD
+## RUN pip install matplotlib seaborn jupyter jupyter_contrib_nbextensions pandas sklearn
+## RUN pip install git+https://github.com/estorrs/mgitools
+## RUN conda install -c dglteam dgl-cuda10.1
+## =======
+RUN pip install matplotlib seaborn jupyter jupyter_contrib_nbextensions pandas xgboost
+#>>>>>>> b0e6e31222badd59e97fab6fa97ec38d2dc5e586
 
 ## CMD /bin/bash
 CMD jupyter notebook --no-browser --allow-root --ip 0.0.0.0
